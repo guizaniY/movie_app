@@ -1,0 +1,7 @@
+<div class="movie-grid">
+  <a class="movie-card" *ngFor="let movie of store.movies()" [routerLink]="['/movie', movie.id]">
+    <img [src]="imageUrl + movie.poster_path" [alt]="movie.title" />
+    <p>{{ movie.title }}</p>
+  </a>
+  <p class="empty" *ngIf="store.movies().length === 0">Votre wish list est vide.</p>
+</div>

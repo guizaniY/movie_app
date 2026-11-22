@@ -1,0 +1,28 @@
+.head-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe016;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #000;
+  cursor: pointer;
+}
+
+button {
+  background: #000;
+  color: #ffe016;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+fa-icon {
+  margin-right: 6px;
+}

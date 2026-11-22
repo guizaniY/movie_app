@@ -1,0 +1,17 @@
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  background: #000;
+  padding: 12px 20px;
+  color: #ffe016;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #ffe016;
+  color: #ffe016;
+  padding: 4px 8px;
+  width: 220px;
+}

@@ -1,0 +1,12 @@
+<app-search-bar (titleChange)="onTitleChange($event)" />
+
+<app-movie-search *ngIf="title; else allMovies" [title]="title" />
+
+<ng-template #allMovies>
+  <div class="movie-grid">
+    <a class="movie-card" *ngFor="let movie of movies$ | async" [routerLink]="['/movie', movie.id]">
+      <img [src]="imageUrl + movie.poster_path" [alt]="movie.title" />
+      <p>{{ movie.title }}</p>
+    </a>
+  </div>
+</ng-template>

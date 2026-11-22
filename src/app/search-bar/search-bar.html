@@ -1,0 +1,8 @@
+<div class="search-bar">
+  <fa-icon [icon]="faSearch"></fa-icon>
+  <input
+    type="text"
+    placeholder="movie title"
+    (input)="searchMovieByTitle($any($event.target).value)"
+  />
+</div>
